@@ -1,38 +1,92 @@
+/* Dark Mode Colors */
+:root {
+  --main-background: #252525;
+  --highlight: #414141;
+  --shadow: #161616;
+  --text-color: #ffffff;
+  --border-color: #00000000;
+  --button-hover: #303030;
+  --button-pressed: #202020;
+}
+
+/* Light Mode Colors */
+/*:root {
+  --main-background: #efefef;
+  --highlight: #ffffff;
+  --shadow: #bfbfbf;
+  --text-color: #000000;
+  --border-color: #00000000;
+  --button-hover: #f8f8f8;
+  --button-pressed: #dfdfdf;
+}*/
+
+body {
+  background-color: var(--main-background);
+  color: var(--text-color);
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+
 .App {
-  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  max-width: 60rem;
+  min-height: 80vh;
+  padding: 2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App * {
+  margin: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Card {
+  background-color: var(--main-background);
+  width: auto;
+  height: auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-radius: 2rem;
+  border: 1px solid var(--border-color);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.hardElevated {
+  box-shadow: inset 2px 2px 2px var(--highlight), 
+  3px 3px 3px var(--shadow);
+  border: none ! important;
 }
 
-.App-link {
-  color: #61dafb;
+.softElevated {
+  box-shadow: -3px -3px 3px var(--highlight), 
+  3px 3px 3px var(--shadow),
+  inset -3px -3px 3px var(--shadow),
+  inset 3px 3px 3px var(--highlight);
+  border: none ! important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+  cursor: pointer;
+  color: var(--text-color);
+}
+
+button.hardElevated:focus {
+  background-color: var(--button-pressed);
+  box-shadow: inset 3px 3px 3px var(--shadow),
+  inset -1px -1px 2px var(--highlight);
+}
+
+button.softElevated:focus {
+  background-color: var(--button-pressed);
+  box-shadow: -3px -3px 3px var(--shadow),
+  3px 3px 3px var(--highlight),
+  inset -3px -3px 3px var(--highlight),
+  inset 3px 3px 3px var(--shadow);
+}
+
+button:hover {
+  background-color: var(--button-hover);
 }
