@@ -16,7 +16,7 @@
   --shadow: #bfbfbf;
   --text-color: #000000;
   --border-color: #00000000;
-  --button-hover: #f8f8f8;
+  --button-hover: #e8e8e8;
   --button-pressed: #dfdfdf;
 }
 
@@ -77,8 +77,16 @@ button:hover {
   background-color: var(--button-hover);
 }
 
-button:active {
+button.hardElevated:active {
   background-color: var(--button-pressed);
-  box-shadow: 3px 3px 3px var(--highlight),
+  box-shadow: inset 3px 3px 3px var(--shadow),
+  3px 3px 3px var(--highlight);
+}
+
+button.softElevated:active {
+  background-color: var(--button-pressed);
+  box-shadow: -1px -1px 1px var(--shadow),
+  3px 3px 3px var(--highlight),
+  inset -1px -1px 1px var(--highlight),
   inset 3px 3px 3px var(--shadow);
 }
