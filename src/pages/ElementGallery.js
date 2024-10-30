@@ -19,6 +19,10 @@ function ElementGallery() {
                 Soft Button
             </button>
 
+            <button className="Card disabled" onClick={() => console.log("click!")}>
+                Disabled Button
+            </button>
+
             <hr></hr>
         </>
     );
