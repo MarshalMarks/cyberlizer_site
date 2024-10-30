@@ -1,5 +1,5 @@
 /* Dark Mode Colors */
-:root {
+/*:root {
   --main-background: #252525;
   --highlight: #414141;
   --shadow: #161616;
@@ -8,10 +8,10 @@
   --button-hover: #2b2b2b;
   --button-pressed: #202020;
   --text-pressed: #c8c8c8;
-}
+}*/
 
 /* Light Mode Colors */
-/*:root {
+:root {
   --main-background: #efefef;
   --highlight: #ffffff;
   --shadow: #bfbfbf;
@@ -21,7 +21,7 @@
   --button-pressed: #dfdfdf;
   --text-pressed: #202020;
   --text-pressed: #000000;
-}*/
+}
 
 body {
   background-color: var(--main-background);
