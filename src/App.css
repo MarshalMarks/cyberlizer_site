@@ -1,5 +1,5 @@
 /* Dark Mode Colors */
-:root {
+/*:root {
   --main-background: #252525;
   --highlight: #414141;
   --shadow: #161616;
@@ -7,10 +7,10 @@
   --border-color: #00000000;
   --button-hover: #303030;
   --button-pressed: #202020;
-}
+}*/
 
 /* Light Mode Colors */
-/*:root {
+:root {
   --main-background: #efefef;
   --highlight: #ffffff;
   --shadow: #bfbfbf;
@@ -18,7 +18,7 @@
   --border-color: #00000000;
   --button-hover: #f8f8f8;
   --button-pressed: #dfdfdf;
-}*/
+}
 
 body {
   background-color: var(--main-background);
@@ -73,20 +73,12 @@ button {
   color: var(--text-color);
 }
 
-button.hardElevated:focus {
-  background-color: var(--button-pressed);
-  box-shadow: inset 3px 3px 3px var(--shadow),
-  inset -1px -1px 2px var(--highlight);
-}
-
-button.softElevated:focus {
-  background-color: var(--button-pressed);
-  box-shadow: -3px -3px 3px var(--shadow),
-  3px 3px 3px var(--highlight),
-  inset -3px -3px 3px var(--highlight),
-  inset 3px 3px 3px var(--shadow);
-}
-
 button:hover {
   background-color: var(--button-hover);
+}
+
+button:active {
+  background-color: var(--button-pressed);
+  box-shadow: 3px 3px 3px var(--highlight),
+  inset 3px 3px 3px var(--shadow);
 }
