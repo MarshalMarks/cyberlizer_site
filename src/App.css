@@ -1,5 +1,5 @@
 /* Dark Mode Colors */
-:root {
+/*:root {
   --main-background: #252525;
   --highlight: #414141;
   --shadow: #161616;
@@ -8,10 +8,10 @@
   --button-hover: #2b2b2b;
   --button-pressed: #202020;
   --text-pressed: #c8c8c8;
-}
+}*/
 
 /* Light Mode Colors */
-/*:root {
+:root {
   --main-background: #efefef;
   --highlight: #ffffff;
   --shadow: #bfbfbf;
@@ -21,7 +21,7 @@
   --button-pressed: #dfdfdf;
   --text-pressed: #202020;
   --text-pressed: #000000;
-}*/
+}
 
 body {
   background-color: var(--main-background);
@@ -42,6 +42,17 @@ body {
 }
 
 .App * {
+  margin: 1rem;
+}
+
+.elementContainer {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.elementContainer * {
   margin: 1rem;
 }
 
@@ -100,6 +111,20 @@ button:active, button.disabled {
   color: var(--text-pressed);
 }
 
-hr {
+hr.spacer {
+  border: 2px solid var(--highlight);
+  border-top: 2px solid var(--shadow);
+  border-left: 2px solid var(--shadow);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 
+.header {
+  margin-bottom: 2rem;
+}
+
+.footerText {
+  text-align: end;
+  color: var(--text-pressed);
+  margin-top: 1.5rem;
 }
