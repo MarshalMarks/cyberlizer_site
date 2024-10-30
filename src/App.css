@@ -83,26 +83,19 @@ button:hover {
   background-color: var(--button-hover);
 }
 
-button.disabled {
-  background-color: var(--button-pressed);
-  box-shadow: inset 3px 3px 3px var(--shadow),
-  2px 2px 2px var(--highlight);
-  color: var(--text-pressed);
-}
-
-button.hardElevated:active {
+button.hardElevated:active, button.hardElevated.disabled {
   box-shadow: inset 3px 3px 3px var(--shadow),
   2px 2px 2px var(--highlight);
 }
 
-button.softElevated:active {
+button.softElevated:active, button.softElevated.disabled {
   box-shadow: -1px -1px 1px var(--shadow),
   3px 3px 3px var(--highlight),
   inset -1px -1px 1px var(--highlight),
   inset 3px 3px 3px var(--shadow);
 }
 
-button:active {
+button:active, button.disabled {
   background-color: var(--button-pressed);
   color: var(--text-pressed);
 }
