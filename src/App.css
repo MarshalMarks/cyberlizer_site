@@ -5,8 +5,9 @@
   --shadow: #161616;
   --text-color: #ffffff;
   --border-color: #00000000;
-  --button-hover: #303030;
+  --button-hover: #2b2b2b;
   --button-pressed: #202020;
+  --text-pressed: #c8c8c8;
 }*/
 
 /* Light Mode Colors */
@@ -18,6 +19,8 @@
   --border-color: #00000000;
   --button-hover: #e8e8e8;
   --button-pressed: #dfdfdf;
+  --text-pressed: #202020;
+  --text-pressed: #000000;
 }
 
 body {
@@ -78,15 +81,22 @@ button:hover {
 }
 
 button.hardElevated:active {
-  background-color: var(--button-pressed);
   box-shadow: inset 3px 3px 3px var(--shadow),
-  3px 3px 3px var(--highlight);
+  2px 2px 2px var(--highlight);
 }
 
 button.softElevated:active {
-  background-color: var(--button-pressed);
   box-shadow: -1px -1px 1px var(--shadow),
   3px 3px 3px var(--highlight),
   inset -1px -1px 1px var(--highlight),
   inset 3px 3px 3px var(--shadow);
+}
+
+button:active {
+  background-color: var(--button-pressed);
+  color: var(--text-pressed);
+}
+
+hr {
+
 }

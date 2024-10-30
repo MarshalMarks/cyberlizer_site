@@ -18,6 +18,8 @@ function ElementGallery() {
             <button className="Card softElevated" onClick={() => console.log("click!")}>
                 Soft Button
             </button>
+
+            <hr></hr>
         </>
     );
 }
