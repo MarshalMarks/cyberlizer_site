@@ -35,7 +35,7 @@ function ElementGallery() {
 
             <hr className="spacer"></hr>
 
-            <p className="footerText"><i>Clay Marks 2024</i></p>
+            <p className="footerText">Clay Marks 2024</p>
         </>
     );
 }

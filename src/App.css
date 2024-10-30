@@ -56,6 +56,14 @@ body {
   margin: 1rem;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
 .Card {
   background-color: var(--main-background);
   width: auto;
@@ -127,10 +135,13 @@ hr.spacer {
 
 .header {
   margin-bottom: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .footerText {
   text-align: end;
-  color: var(--text-pressed);
   margin-top: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
