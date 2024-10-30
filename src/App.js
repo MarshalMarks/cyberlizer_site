@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
-          <Route exact path='/test' element={ <ElementGallery /> } />
+          <Route exact path='*' element={ <ElementGallery /> } />
         </Routes>
       </Router>
     </div>
